@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  background: #066acd;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+  width: 40%;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  background: white;
+  border-radius: 10px;
+  flex-direction: column;
+}
+@media screen and (max-width: 425px) {
+  .container {
+    width: 90%;
+    margin: 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (min-width: 760px) {
+  .container {
+    width: 90%;
+  }
+}
+
+#newtask {
+  position: relative;
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+#newtask input {
+  width: 75%;
+  height: 45px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+}
+#newtask input:focus {
+  outline: none;
+  border-color: #0d75ec;
 }
 
-.App-link {
-  color: #61dafb;
+#newtask button {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #0d75ec;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tasks {
+  /* background-color: #ffffff; */
+  padding: 30px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
 }
+.task {
+  background-color: #c5e1e6;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #939697;
+  cursor: pointer;
+}
+.task span {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.task button {
+  background-color: #0a2ea4;
+  color: #ffffff;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.buttons {
+  width: 40%;
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.text p {
+  word-break: break-all;
+}
+
+/* .main ul li p {
+  max-width: 50px;
+} */
